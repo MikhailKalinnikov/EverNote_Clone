@@ -1,0 +1,33 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.typing {
+  width: 31ch;
+  animation: typing 6s steps(31), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1em;
+  color: maroon; /* Цвет текста */
+  font-weight: 550;
+}
+.typing1 {
+  width: 25ch;
+  animation: typing 4s steps(25), blink 0.5s step-end infinite alternate;
+  color: blue; /* Цвет текста */
+  font-size: 1.1em;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
